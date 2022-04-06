@@ -4,7 +4,7 @@ import { data } from "./data";
 
 export const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="bg-white pb-8">
       <div className="w-4/5 mx-auto pt-14">
         <h2 className="text-5xl font-medium text-center pb-4">Portfolio</h2>
         <ul className="my-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

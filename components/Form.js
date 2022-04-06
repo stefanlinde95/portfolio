@@ -22,9 +22,6 @@ export const ContactForm = () => {
     >
       {(formik) => (
         <div className="my-8 px-4 mx-auto">
-          <h2 className="text-4xl text-bold text-white font-light">
-            Contactform
-          </h2>
           <Form className="py-4">
             <TextField label="Name" name="firstName" type="text" />
             <TextField label="Email" name="email" type="email" />
@@ -37,7 +34,7 @@ export const ContactForm = () => {
               </label>
               <textarea
                 id="message"
-                className="borded block text-xl p-2 sm:w-full md:w-full lg:w-50 text-black"
+                className="borded block text-xl p-2 w-full text-black"
                 label="Message"
                 name="textarea"
                 type="text"

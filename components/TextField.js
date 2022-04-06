@@ -9,7 +9,7 @@ export const TextField = ({ label, ...props }) => {
         {label}
       </label>
       <input
-        className={`borded block text-xl p-2 sm:w-full md:w-full lg:w-50 text-black ${
+        className={`borded block text-xl p-2 w-full text-black ${
           meta.touched &&
           meta.error &&
           "invalid:border-pink-500 invalid:text-pink-600"

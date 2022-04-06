@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="w-4/5 sm:block md:flex mx-auto pt-16">
         <div className="sm:w-full md:w-1/2 flex">
           <div className="block sm:w-full md:w-3/5 my-auto">
-            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold my-8">
+            <h1 className="text-4xl lg:text-6xl font-bold my-8">
               Developer and SEO specialist
             </h1>
             <p className="text-2xl font-medium  mb-4">
@@ -29,7 +29,7 @@ export const Hero = () => {
                 href="#contact"
                 className="btn btn-contact px-4 py-2 ml-4 border border-white rounded-3xl sm:text-sm md:text-md lg:text-lg"
               >
-                Contact me
+                Contact
               </a>
             </div>
           </div>

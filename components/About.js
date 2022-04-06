@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <section id="about" className="bg-white py-8">
       <div className="lg:w-4/5 sm:w-full mx-auto py-8 sm:block md:flex">
-        <div className="sm:w-full lg:w-1/2 pb-8 px-4">
+        <div className="w-full lg:w-1/2 pb-8 px-16 lg:px-0">
           <h2 className="text-5xl font-medium py-8 mt-8">About</h2>
           <p className="my-4">
             Kuigi täna olen veebiarendaja, siis vabakutselise teenusepakkujana
