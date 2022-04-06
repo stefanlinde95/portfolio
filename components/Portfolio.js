@@ -48,6 +48,7 @@ export const Portfolio = () => {
                         <a
                           href={github}
                           target="_blank"
+                          rel="noopener noreferrer"
                           className="text-grey ml-2 underline"
                         >
                           GitHub
@@ -58,9 +59,9 @@ export const Portfolio = () => {
                       {description}
                     </Text>
                     <div className="my-4 height-full">
-                      {keywords.map((keyword) => {
+                      {keywords.map((keyword, i) => {
                         return (
-                          <Badge className="mx-1 my-2" color="orange">
+                          <Badge key={++i} className="mx-1 my-2" color="orange">
                             {keyword}
                           </Badge>
                         );
