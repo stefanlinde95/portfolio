@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "^4.1.2",
-    "@mantine/hooks": "^4.1.2",
-    "@mantine/next": "^4.1.2",
     "formik": "^2.2.9",
     "next": "12.1.4",
     "react": "17.0.0",

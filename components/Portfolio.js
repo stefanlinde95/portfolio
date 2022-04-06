@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-import { Card, Text, Badge, CardSection } from "@mantine/core";
+import React from "react";
 import Image from "next/image";
 import { data } from "./data";
 
@@ -14,15 +12,15 @@ export const Portfolio = () => {
             const { id, name, image, description, keywords, url, github } =
               item;
             return (
-              <li key={id} className="px-4 my-4">
-                <Card
-                  className="border border-1 rounded-xl"
+              <li key={id} className="my-4">
+                <div
+                  className="border border-1 rounded-xl overflow-hidden"
                   style={{ height: `100%` }}
                 >
-                  <Card.Section>
+                  <>
                     <a href={url} target="_blank" rel="noopener noreferrer">
                       <Image
-                        className="hover:scale-125 transition duration-500"
+                        className="hover:scale-125 hover:rounded-t-lg transition duration-500 rounded-t-xl"
                         src={image}
                         width="100%"
                         height="50px"
@@ -31,8 +29,8 @@ export const Portfolio = () => {
                         alt={name}
                       />
                     </a>
-                  </Card.Section>
-                  <CardSection className="px-4">
+                  </>
+                  <div className="px-4 portfolio-links">
                     <h3 className="text-xl font-medium pt-4">{name}</h3>
                     <a
                       href={url}
@@ -55,20 +53,21 @@ export const Portfolio = () => {
                         </a>
                       </>
                     )}
-                    <Text mt="md" color="dimmed">
-                      {description}
-                    </Text>
+                    <p className="text-grey">{description}</p>
                     <div className="my-4 height-full">
                       {keywords.map((keyword, i) => {
                         return (
-                          <Badge key={++i} className="mx-1 my-2" color="orange">
+                          <div
+                            key={++i}
+                            className="mx-1 my-2 badge rounded-xl font-medium px-3 py-2"
+                          >
                             {keyword}
-                          </Badge>
+                          </div>
                         );
                       })}
                     </div>
-                  </CardSection>
-                </Card>
+                  </div>
+                </div>
               </li>
             );
           })}

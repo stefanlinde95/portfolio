@@ -21,7 +21,7 @@ export const ContactForm = () => {
       validationSchema={validate}
     >
       {(formik) => (
-        <div className="w-4/5 my-8 px-4 mx-auto">
+        <div className="my-8 px-4 mx-auto">
           <h2 className="text-4xl text-bold text-white font-light">
             Contactform
           </h2>
