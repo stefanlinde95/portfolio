@@ -7,7 +7,7 @@ export const Contact = () => {
       <div className="sm:w-full md:w-4/5 sm:block md:flex mx-auto py-8 text-white px-8">
         <div className="sm:w-full md:w-1/2 my-auto">
           <h2 className="text-white text-6xl font-medium my-8">Contact</h2>
-          <p className="text-xl">
+          <p className="text-xl lg:pr-8">
             If you wish to contact me, the best way is to write to me via email
             or contact form.
           </p>

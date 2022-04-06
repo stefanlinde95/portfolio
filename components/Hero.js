@@ -7,8 +7,8 @@ export const Hero = () => {
     <div id="hero" className="w-full bg-black text-white -mt-16">
       <div className="w-4/5 sm:block md:flex mx-auto pt-16">
         <div className="sm:w-full md:w-1/2 flex">
-          <div className="block w-3/5 my-auto">
-            <h1 className="sm:text-2xl md:text-4xl lg:text-6xl font-bold my-8">
+          <div className="block sm:w-full md:w-3/5 my-auto">
+            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl font-bold my-8">
               Developer and SEO specialist
             </h1>
             <p className="text-2xl font-medium  mb-4">

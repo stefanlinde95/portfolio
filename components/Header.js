@@ -8,7 +8,7 @@ const Header = () => {
           Ste<span>.</span>fans
         </div>
         <nav className="ml-auto">
-          <ul className="list-none text-white flex space-x-6 font-light">
+          <ul className="list-none text-white sm:hidden md:flex space-x-6 font-light">
             <li>
               <a href="#hero">Home</a>
             </li>
