@@ -50,7 +50,7 @@ const Header = () => {
           ) : (
             <>
               <CloseMenu />
-              <nav className="mob-menu">
+              <nav className="mob-menu shadow-xl">
                 <ul className="list-none space-x-6 font-light bg-white py-8 px-16 space-y-4">
                   <li>
                     <a href="#hero">Home</a>

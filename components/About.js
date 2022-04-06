@@ -9,22 +9,29 @@ export const About = () => {
     <section id="about" className="bg-white py-8">
       <div className="lg:w-4/5 sm:w-full mx-auto py-8 sm:block md:flex">
         <div className="w-full lg:w-1/2 pb-8 px-16 lg:px-0">
-          <h2 className="text-5xl font-medium py-8 mt-8">About</h2>
+          <h2 className="text-5xl font-medium py-8">About</h2>
           <p className="my-4">
-            Kuigi täna olen veebiarendaja, siis vabakutselise teenusepakkujana
-            olen teinud põhimõtteliselt kõik töid, mida üks agentuur saab
-            pakkuda. Alates disainimisest ja Google AdWordsi seadistamisest
-            lõpetadest Custom disain lahenduste väljatöötamisega ja
-            arendamisega. Just eelnevat pean ka üheks omaks tugevuseks, sest
-            suudan näha projekti erinevatest vaatenurkadest.
+            Hi there! My name is Stefan Linde and I am a developer from Tallinn,
+            Estonia. I built my very first static website back in{" "}
+            <strong>2019</strong>. Today I use mainly{" "}
+            <strong>React (GatsbyJS and NextJS) </strong> although I have used
+            Laravel and MERN stack in my projects.
           </p>
-          <a href="#" className="underline text-grey">
-            Curriculum vitae
-          </a>
+          <p className="my-4">
+            Although I am a web developer today, as a freelancer, I have done
+            basically all the work that one agency can offer. From branding and
+            setting up Google AdWords to developing web solutions. I also
+            consider the above to be one of my strengths, because I can see the
+            project from different perspectives.
+          </p>
+          <p>
+            Since I create websites with good SEO in mind I can say that most of
+            my clients get their clients from search engines (organic traffic).
+          </p>
         </div>
-        <div className="sm:w-full lg:w-1/2 text-center mt-8">
+        <div className="w-full lg:w-1/2 text-center mt-8">
           <Image
-            className="rounded-full"
+            className="rounded-full mt-16"
             src={authorImg}
             width={300}
             height={300}

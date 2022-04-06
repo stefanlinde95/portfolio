@@ -8,8 +8,7 @@ export const Contact = () => {
         <div className="sm:w-full md:w-1/2 my-auto px-4">
           <h2 className="text-white text-6xl font-medium my-8">Contact</h2>
           <p className="text-xl lg:pr-8">
-            If you wish to contact me, the best way is to write to me via email
-            or contact form.
+            If you wish to contact me, the best way is to send me an email.
           </p>
           <p className=" sm:text-xl md:text-2xl lg:text-4xl font-light my-8">
             <span className="font-medium">E-mail: </span>

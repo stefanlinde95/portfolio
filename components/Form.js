@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import { TextField } from "./TextField";
 import * as Yup from "yup";
 
 export const ContactForm = () => {
+  const [sentSuccess, setSentSucess] = useState(false);
   async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
@@ -15,6 +16,7 @@ export const ContactForm = () => {
       method: "post",
       body: JSON.stringify(formData),
     });
+    setSentSucess(true);
   }
 
   const validate = Yup.object({
@@ -27,7 +29,7 @@ export const ContactForm = () => {
   return (
     <Formik
       initialValues={{
-        firstName: "",
+        name: "",
         email: "",
         message: "",
       }}
@@ -54,7 +56,11 @@ export const ContactForm = () => {
                 rows={5}
               />
             </div>
-
+            {sentSuccess && (
+              <div className="rounded-xl success px-4 py-2 mt-4">
+                Message sent!
+              </div>
+            )}
             <button
               type="submit"
               className="mt-8 text-xl border bg-white text-black px-4 py-2 rounded hover:bg-black hover:text-white hover:border transition duration-500"
