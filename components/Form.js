@@ -4,6 +4,19 @@ import { TextField } from "./TextField";
 import * as Yup from "yup";
 
 export const ContactForm = () => {
+  async function handleOnSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch("/api/sendgrid", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+  }
+
   const validate = Yup.object({
     firstName: Yup.string()
       .max(15, "Name field can`t be longer than 15 chars")
@@ -16,14 +29,14 @@ export const ContactForm = () => {
       initialValues={{
         firstName: "",
         email: "",
-        textarea: "",
+        message: "",
       }}
       validationSchema={validate}
     >
       {(formik) => (
         <div className="my-8 px-4 mx-auto">
-          <Form className="py-4">
-            <TextField label="Name" name="firstName" type="text" />
+          <Form className="py-4" method="post" onSubmit={handleOnSubmit}>
+            <TextField label="Name" name="name" type="text" />
             <TextField label="Email" name="email" type="email" />
             <div className="my-4">
               <label
@@ -36,7 +49,7 @@ export const ContactForm = () => {
                 id="message"
                 className="borded block text-xl p-2 w-full text-black"
                 label="Message"
-                name="textarea"
+                name="message"
                 type="text"
                 rows={5}
               />
