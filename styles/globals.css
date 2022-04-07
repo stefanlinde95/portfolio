@@ -48,7 +48,7 @@ margin-left:0px!important;
 .toggle-menu-wrapper {
   cursor: pointer;
 }
-.portfolio-links .text-grey:hover {
+.portfolio-links a:hover {
   color: orangered;
   transition: 1s;
 }
@@ -92,6 +92,7 @@ margin-left:0px!important;
   transition: .5s;
   background: #000;
   color: #fff;
+  border:1px solid #fff;
 }
 
 .btn-contact:hover {
