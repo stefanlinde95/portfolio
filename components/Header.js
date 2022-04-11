@@ -23,7 +23,7 @@ const Header = () => {
     <header className="main-header sticky top-0 z-50">
       <div className="py-4 flex w-5/6 md:w-4/5 mx-auto">
         <div className="logo text-white font-medium text-xl my-auto">
-          Ste<span>.</span>fans
+          Stefanlinde<span>.</span>ee
         </div>
         <nav className="ml-auto hidden md:block">
           <ul className="list-none text-white flex space-x-6 font-light">
