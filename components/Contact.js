@@ -12,7 +12,7 @@ export const Contact = () => {
           </p>
           <p className=" sm:text-xl md:text-2xl lg:text-4xl font-light my-8">
             <span className="font-medium">E-mail: </span>
-            linde@ste.fans
+            info@stefanlinde.ee
           </p>
         </div>
         <div className="sm:w-full md:w-1/2">

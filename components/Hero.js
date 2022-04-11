@@ -14,10 +14,6 @@ export const Hero = () => {
             <p className="text-2xl font-medium  mb-4">
               I develop and optimize websites.
             </p>
-            <p className="font-thin mb-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio molestias, assumenda ipsum itaque ipsam magni.
-            </p>
             <div className="flex md:mb-8">
               <a
                 href="#portfolio"
