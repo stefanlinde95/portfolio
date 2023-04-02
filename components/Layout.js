@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer className="bg-black text-center py-4">Stefan Linde 2022</footer>
+      <footer className="bg-black text-center py-4">Stefan Linde 2023</footer>
     </>
   );
 };

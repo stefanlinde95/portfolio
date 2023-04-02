@@ -11,14 +11,14 @@ export const About = () => {
         <div className="w-full lg:w-1/2 pb-8 px-16 lg:px-0">
           <h2 className="text-5xl font-medium py-8">About</h2>
           <p className="my-4">
-            Hi there! My name is Stefan Linde and I am a developer from Tallinn,
+            Hi! My name is Stefan Linde and I am a developer from Tallinn,
             Estonia. I built my very first static website back in{" "}
             <strong>2019</strong>. Today I use mainly{" "}
-            <strong>React (GatsbyJS and NextJS) </strong> although I have used
-            Laravel and MERN stack in my projects.
+            <strong>React (NextJS)</strong> and Wordpress although I have also used
+            Laravel Blade in my projects.
           </p>
           <p className="my-4">
-            Although I am a web developer today, as a freelancer, I have done
+            Although I am a freelance web developer today I have done
             basically all the work that one agency can offer. From branding and
             setting up Google AdWords to developing web solutions. I also
             consider the above to be one of my strengths, because I can see the
@@ -26,7 +26,7 @@ export const About = () => {
           </p>
           <p>
             Since I create websites with good SEO in mind I can say that most of
-            my clients get their clients from search engines (organic traffic).
+            my clients customers come from search engines (organic traffic).
           </p>
         </div>
         <div className="w-full lg:w-1/2 text-center mt-8">
