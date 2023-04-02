@@ -13,7 +13,7 @@ export const About = () => {
           <p className="my-4">
             Hi! My name is Stefan Linde and I am a developer from Tallinn,
             Estonia. I built my very first static website back in{" "}
-            <strong>2019</strong>. Today I use mainly{" "}
+            <strong>2020</strong>. Today I use mainly{" "}
             <strong>React (NextJS)</strong> and Wordpress although I have also used
             Laravel Blade in my projects.
           </p>
